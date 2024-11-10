@@ -16,12 +16,12 @@ for (let i = 1; i <= 100; i++){
 //Chessboard
 function generateBoard(size) {
     let board = "";
-    for(let x = 0; x < size; x++) {
-        for(let y = 0; y < size; y++ ) {
-            if ((x+y) % 2 === 0) {
-                board += "#";
-            } else {
+    for(let y = 0; y < size; y++) {
+        for(let x = 0; x < size; x++ ) {
+            if ((x + y) % 2 === 0) {
                 board += " ";
+            } else {
+                board += "#";
             }
         }
         //add a newline character
